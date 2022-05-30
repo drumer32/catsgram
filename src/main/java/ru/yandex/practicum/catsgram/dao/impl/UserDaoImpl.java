@@ -10,11 +10,9 @@ import java.util.Optional;
 @Component
 public class UserDaoImpl implements UserDao {
     private final JdbcTemplate jdbcTemplate;
-
     public UserDaoImpl(JdbcTemplate jdbcTemplate){
         this.jdbcTemplate=jdbcTemplate;
     }
-
     @Override
     public Optional<User> findUserById(String id) {
         return Optional.empty();

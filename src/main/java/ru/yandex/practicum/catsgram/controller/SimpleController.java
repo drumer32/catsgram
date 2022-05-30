@@ -13,7 +13,6 @@ public class SimpleController {
     public SimpleController(ManualJdbcConnectService manualJdbcConnectService) {
         this.manualJdbcConnectService = manualJdbcConnectService;
     }
-
     @GetMapping("/home")
     public String homePage() {
         return "Котограм";
