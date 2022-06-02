@@ -16,7 +16,7 @@ public class UserDaoImpl implements UserDao {
     private final Logger log = LoggerFactory.getLogger(UserDaoImpl.class);
     private final JdbcTemplate jdbcTemplate;
     public UserDaoImpl(JdbcTemplate jdbcTemplate){
-        this.jdbcTemplate=jdbcTemplate;
+        this.jdbcTemplate = jdbcTemplate;
     }
     @Override
     public Optional<User> findUserById(String id) {
